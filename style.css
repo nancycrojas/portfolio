@@ -1,6 +1,7 @@
 :root {
-    --fondo: black;  
+    --fondoOscuro: black;  
     --celeste: #AED9E0;
+    --fondoRosa: #FFA69E;
 }
 
 * {
@@ -10,12 +11,13 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Header */
 
 header {
-    background-color: var(--fondo); 
+    background-color: var(--fondoOscuro); 
     /*box-shadow: -2px 4px 17px 0px rgba(0,0,0,0.75);*/
     padding: 20px 0;
     position: fixed;
@@ -37,7 +39,7 @@ button, .send {
     margin-right: 20px;
     border-radius: 40px;
     font-size: 15px;
-    background-color: #AED9E0;
+    background-color: var(--celeste);
     border: none;
     cursor: pointer;
     font-weight: bold;  
@@ -48,13 +50,13 @@ button:hover, .send:hover {
 }
 
 .nav-items .contact-button {
-    color: var(--fondo);
+    color: var(--fondoOscuro);
     font-weight: bold;
 }
 
 .nav-items a {
     padding: 30px;
-    color: #AED9E0;
+    color: var(--celeste);
 }
 
 .nav-items a:hover {
@@ -65,8 +67,8 @@ button:hover, .send:hover {
 
 .about-section {
     min-height: 100vh;
-    padding: 100px 40px;
-    background-color: var(--fondo);
+    padding: 170px 40px;
+    background-color: var(--fondoOscuro);
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -107,7 +109,7 @@ h1 {
 .about-section-bis {
     min-height: 100vh;
     padding-top: 100px;
-    background-color: #FFA69E;
+    background-color: var(--fondoRosa);
 }
 
 .container-bis {
@@ -165,7 +167,7 @@ h1 {
 .skills-section {
     min-height: 100vh;
     padding-top: 110px;
-    background-color: var(--fondo);
+    background-color: var(--fondoOscuro);
 }
 
 .skills-container {
@@ -221,7 +223,7 @@ h2 {
 .quote-section {
     min-height: 100vh;
     padding-top: 100px;
-    background-color: var(--fondo);
+    background-color: var(--fondoOscuro);
 }
 
 .quote-container {
@@ -229,7 +231,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #FFA69E;
+    background-color: var(--fondoRosa);
     min-height: 100vh;
     text-align: center;
 }
@@ -254,7 +256,7 @@ h3 {
 .projects-section {
     min-height: 100vh;
     padding-top: 110px;
-    background-color: var(--fondo);
+    background-color: var(--fondoOscuro);
 }
 
 .projects-container__txt {
@@ -309,7 +311,7 @@ h2 {
 .contact-section {
     min-height: 100vh;
     padding: 110px 0 50px 0;
-    background-color: var(--fondo);
+    background-color: var(--fondoOscuro);
 }
 
 .contact-container {
@@ -338,7 +340,7 @@ h2 {
     color: black;
     margin-right: 20px;
     font-size: 20px;
-    background-color:#FFA69E;
+    background-color: var(--fondoRosa);
     padding: 10px;
     border-radius: 50%;
 }
@@ -420,7 +422,7 @@ textarea:focus {
 /* Footer */
 
 footer {
-background-color: #FFA69E;
+background-color: var(--fondoRosa);
 min-height: 100px;
 padding: 30px 0;
 
@@ -637,7 +639,6 @@ footer p {
         padding: 4px;  
     }
     .nav-contact-items {
-   
     margin: 15px 0;
     font-size: 14px;
     }
@@ -682,4 +683,19 @@ footer p {
     }
 }
 
-
+@media (max-width:300px){
+    .skills-items .icons {
+    font-size: 100px;
+    }
+    .skills-items .skill-name {
+    font-size: 25px;
+    margin-top: 10px;
+    }
+    .skills-items {
+    width: 250px;
+    height: 250px;   
+    }
+    .net-icons {
+    margin: 0 20px 0;
+    }
+}
