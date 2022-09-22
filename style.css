@@ -19,7 +19,7 @@
 header {
     background-color: var(--fondoOscuro); 
     /*box-shadow: -2px 4px 17px 0px rgba(0,0,0,0.75);*/
-    padding: 20px 0;
+    padding: 32px 0;
     position: fixed;
     left: 0;
     right: 0;
@@ -33,29 +33,19 @@ header {
     align-items: center;
 }
 
-button, .send {
-    width: 150px;
-    height: 50px;
+.nav-items .contact-style {
+    background-color: var(--celeste);
+    padding: 13px 30px;
     margin-right: 20px;
     border-radius: 40px;
-    font-size: 15px;
-    background-color: var(--celeste);
-    border: none;
-    cursor: pointer;
-    font-weight: bold;  
-}
-
-button:hover, .send:hover {
-    color: palevioletred;
-}
-
-.nav-items .contact-button {
     color: var(--fondoOscuro);
+    font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-items a {
-    padding: 30px;
+    margin: 30px;
     color: var(--celeste);
 }
 
@@ -74,31 +64,46 @@ button:hover, .send:hover {
     align-items: center; 
 }
 
-.about-me__section {
+.about-me-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-right: 180px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 160px;
 }
 
-.about-me__section p {
+.about-me-section p {
+    color: var(--celeste);
     font-size: 30px;
     margin-bottom: 10px;
-    color: var(--celeste);
 }
 
 h1 {
+    color: rgb(236, 155, 155);
     font-size: 60px;
     margin-bottom: 10px;
-    color: rgb(236, 155, 155);
 }
 
-.about-button {
+.about-style, .download-style {
+    background-color: var(--celeste);
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    color: var(--fondoOscuro);
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
-    margin-left: 20px;
+    cursor: pointer;
 }
 
-.about-me__photo img {
+.about-style:hover, .download-style:hover, .send:hover {
+    color: palevioletred;
+}
+
+.about-me-photo img {
     width: 380px;
     height: 380px;
     border-radius: 50%;
@@ -108,8 +113,8 @@ h1 {
 /*About me section bis*/
 .about-section-bis {
     min-height: 100vh;
-    padding-top: 100px;
     background-color: var(--fondoRosa);
+    padding-top: 60px;
 }
 
 .container-bis {
@@ -117,11 +122,11 @@ h1 {
     justify-content: space-evenly; 
 }
 
-.about-me__photo-bis { 
+.about-me-photo-bis { 
     max-width: 30%;
 }
 
-.about-me__photo-bis img {
+.about-me-photo-bis img {
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -129,7 +134,7 @@ h1 {
     margin-top: 130px;
 }
 
-.about-me__section-bis {
+.about-me-section-bis {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,28 +142,24 @@ h1 {
     max-width: 60%;
 }
 
-.about-me__section-bis h4 {
-    font-size: 30px;
+.about-me-section-bis h4 {
     margin-bottom: 20px;
     margin-top: 100px;
+    font-size: 30px;
 }
 
-.about-me__section-bis p {
+.about-me-section-bis p {
+    margin-bottom: 30px;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 30px;
-}
-
-.download {
-    margin: 20px; 
 }
 
 .arrow {
-    font-size: 40px;
-    color: var(--celeste);
     position: fixed;
     bottom: 10px;
     right: 25px;
+    color: var(--celeste);
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -175,9 +176,9 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
     margin-bottom: 20px;
     color: var(--celeste);
+    font-size: 40px;
 }
 
 .skills-container p {
@@ -196,8 +197,8 @@ h2 {
     width: 250px;
     height: 250px;
     padding: 70px;
-    border-radius: 10px;
     border: 2px solid rgb(236, 155, 155);
+    border-radius: 10px;
     margin: 10px;
     transition: 0.2s;
     display: flex;
@@ -214,8 +215,8 @@ h2 {
 }
 
 .skills-items .skill-name {
-    font-size: 20px;
     margin-top: 15px;
+    font-size: 20px;
 }
 
 /* Quote section */
@@ -241,14 +242,14 @@ h2 {
 }
 
 .quote-txt {
-    font-size: 20px;
     padding: 40px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 40px;
     margin-bottom: 20px;
+    font-size: 40px;
 }
 
 /* Projects section */
@@ -259,7 +260,7 @@ h3 {
     background-color: var(--fondoOscuro);
 }
 
-.projects-container__txt {
+.projects-container-txt {
     text-align: center;
 }
 
@@ -268,7 +269,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.projects-container__txt p {
+.projects-container-txt p {
     margin: 0 80px 20px;
     color: var(--celeste);
 }
@@ -284,8 +285,8 @@ h2 {
     width: 250px;
     height: 250px;
     padding: 20px;
-    border-radius: 10px;
     border: 2px solid rgb(236, 155, 155);
+    border-radius: 10px;
     margin: 10px;
     transition: 0.2s;
     display: flex;
@@ -318,16 +319,16 @@ h2 {
     display: flex;
     background-color: #B8F2E6;
     justify-content: center;
-    border-radius: 10px;
     border: 1px solid #B8F2E6;
+    border-radius: 10px;
     margin: 0 120px;
 }
 
-.contact-me__container {  
+.contact-me-container {  
     margin: 20px 50px 20px 50px;
 }
 
-.contact-me__container p {
+.contact-me-container p {
     padding-bottom: 30px;
     font-size: 19px;
 }
@@ -336,13 +337,13 @@ h2 {
     margin-left: 30px;
 }
 
-.contact-me__container i {
-    color: black;
+.contact-me-container i {
     margin-right: 20px;
-    font-size: 20px;
-    background-color: var(--fondoRosa);
     padding: 10px;
+    color: black;
+    background-color: var(--fondoRosa);
     border-radius: 50%;
+    font-size: 20px;
 }
 
 .nav-contact-items {
@@ -395,8 +396,8 @@ h2 {
 }
 
 label {
-    font-size: 19px;
     padding-bottom: 10px;
+    font-size: 19px;
 }
 
 .email, .message{
@@ -416,15 +417,23 @@ textarea:focus {
 }
 
 .send {
+    width: 150px;
+    height: 50px;
     margin-top: 20px;
+    background-color: var(--celeste);
+    border-radius: 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;  
+    cursor: pointer;
 }
 
 /* Footer */
 
 footer {
-background-color: var(--fondoRosa);
-min-height: 100px;
-padding: 30px 0;
+    background-color: var(--fondoRosa);
+    min-height: 100px;
+    padding: 30px 0;
 
 }
 
@@ -434,17 +443,17 @@ padding: 30px 0;
     margin-bottom: 30px;
 }
 
-.nav-list__footer {
+.nav-list-footer {
     display: flex;
     flex-direction: row;
 }
 
-.nav-list__footer li a {
-    padding: 30px;
+.nav-list-footer li a {
+    margin: 30px;
     color: black;   
 }
 
-.nav-list__footer li a:hover {
+.nav-list-footer li a:hover {
     color: palevioletred;
 }
 
@@ -496,15 +505,18 @@ footer p {
     .contact-container {
         margin: 0 10px;  
     }
+    h1 {
+        font-size: 50px;
+    }
 }
 
 @media (max-width:940px) {
-    .about-me__section {
+    .about-me-section {
         margin-right: 50px; 
     }
-    .about-me__photo img {
-        width: 350px;
-        height: 350px;
+    .about-me-photo img {
+        width: 260px;
+        height: 260px;
     }
     .contact-container {
         display: flex;
@@ -513,47 +525,47 @@ footer p {
 }
 
 @media (max-width:698px) {
-    .nav-list__footer li a {
-        padding: 10px;  
+    .nav-list-footer li a {
+        margin: 10px;  
     }
     .nav-items a {
-        padding: 10px;
+        margin: 10px;
     }
     .header-nav .nav-list {
         display: flex;
         justify-content: center;  
     }
-    .about-me__section p {
-        font-size: 25px;
+    .about-me-section p {
+        font-size: 20px;
     }
     h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
-    .about-me__photo img {
-        width: 280px;
-        height: 280px;
+    .about-me-photo img {
+        width: 220px;
+        height: 220px;
     }
     .container-bis {
         display: flex;
         flex-direction: column-reverse;    
     }
-    .about-me__section-bis {
+    .about-me-section-bis {
         margin: 0 60px;
         max-width: 100%;  
     }
-    .about-me__section-bis h4 {
+    .about-me-section-bis h4 {
         margin: 0 20px 10px;
         text-align: center;
     }
-    .about-me__section-bis p {
+    .about-me-section-bis p {
         margin-bottom: 30px;  
     }
-    .about-me__photo-bis { 
+    .about-me-photo-bis { 
         max-width: 100%;
         display: flex;
         justify-content: center;
     }
-    .about-me__photo-bis img {
+    .about-me-photo-bis img {
         margin: 30px;
     }
     .skills-list {
@@ -573,7 +585,7 @@ footer p {
         flex-direction: column; 
         padding: 70px 20px 20px;
     }
-    .about-me__section {
+    .about-me-section {
         margin: 20px 0 60px;     
     }
     .skills-items {
@@ -584,8 +596,8 @@ footer p {
         font-size: 140px;
     }
     .skills-items .skill-name {
-        font-size: 25px;
         margin-top: 10px;
+        font-size: 25px;
     }
     .projects-items {
         width: 300px;
@@ -622,43 +634,43 @@ footer p {
     .about-section {
         padding-top: 5px;
     }
-    .about-me__section p {
+    .about-me-section p {
         font-size: 30px;
     }
     h1 {
         font-size: 55px;  
     }
-    .about-me__photo img {
+    .about-me-photo img {
         width: 250px;
         height: 250px;
     }
     .nav-contact {
         margin: 0;
     }
-    .nav-list__footer li a {
-        padding: 4px;  
+    .nav-list-footer li a {
+        margin: 4px;  
     }
     .nav-contact-items {
-    margin: 15px 0;
-    font-size: 14px;
+        margin: 15px 0;
+        font-size: 14px;
     }
 }
     
 @media (max-width:400px){
-    .about-me__section p {
+    .about-me-section p {
         font-size: 25px;
     }
     h1 {
         font-size: 50px;
     }
-    .about-me__photo img {
+    .about-me-photo img {
         width: 250px;
         height: 250px;
     }
     .skills-container h2 {
         font-size: 30px;
     }
-    .contact-me__container h3 {
+    .contact-me-container h3 {
         font-size: 30px;
     }
     .form-container h3 {
@@ -667,15 +679,8 @@ footer p {
     .nav-contact-items {  
         font-size: 14px;
     }
-    .nav-list__footer li a {
+    .nav-list-footer li a {
         display: none;  
-    }
-    .nav-list__footer li a {
-        padding: 4px;  
-    }
-    .nav-items a {
-        padding: 5px;
-        font-size: 11px;
     }
     .contact {
         width: 80px;
@@ -685,17 +690,17 @@ footer p {
 
 @media (max-width:300px){
     .skills-items .icons {
-    font-size: 100px;
+        font-size: 100px;
     }
     .skills-items .skill-name {
-    font-size: 25px;
-    margin-top: 10px;
+        font-size: 25px;
+        margin-top: 10px;
     }
     .skills-items {
-    width: 250px;
-    height: 250px;   
+        width: 250px;
+        height: 250px;   
     }
     .net-icons {
-    margin: 0 20px 0;
+        margin: 0 20px 0;
     }
 }
