@@ -134,14 +134,6 @@ h1 {
     font-size: 18px;
     text-align: center;
 }
-.arrow {
-    position: fixed;
-    bottom: 10px;
-    right: 25px;
-    color: var(--celeste);
-    font-size: 40px;
-    cursor: pointer;
-}
 /* Section Skills */
 .skills-section {
     min-height: 100vh;
@@ -402,6 +394,14 @@ footer {
 }
 footer p {
     text-align: center;
+}
+.arrow {
+    position: fixed;
+    bottom: 10px;
+    right: 25px;
+    color: var(--celeste);
+    font-size: 40px;
+    cursor: pointer;
 }
 /*Media queries*/
 @media (max-width:1210px) {
