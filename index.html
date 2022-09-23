@@ -17,7 +17,7 @@
       content="Portafolio personal desarrollado para el módulo 1 de Ada ITW"
     />
     <meta name="referrer" content="no-referrer" />
-    <!--Geo tags-->
+    <!-- Geo tags -->
     <meta name="geo.region" content="AR" />
     <meta name="geo.placename" content="Buenos Aires" />
     <meta name="geo.position" content="-34.550688;-58.452607" />
@@ -26,7 +26,7 @@
     <link rel="me" href="mailto:nanclarisaok@gmail.com" />
     <link rel="me" href="sms:+541164632224" />
     <link rel="archives" href="https://github.com/nancycrojas" />
-    <!--Social tags -->
+    <!-- Social tags -->
     <meta property="og:url" content="https://nancycrojas.github.io/portfolio/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Portfolio de Nancy Rojas" />
@@ -60,10 +60,10 @@
       content="https://nancycrojas.github.io/portfolio/"
     />
     <link rel="stylesheet" href="style.css">
-    <!--Iconos devicon / font-awesone-->
+    <!-- Iconos devicon / Font-awesone -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Fuentes-->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -72,88 +72,85 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Menú de navegación-->
+        <!-- Menú de navegación -->
         <nav class="header-nav">
-            <ul class="nav-list">
-                <li class="nav-items">
+            <ul class="nav-list" tabindex="1">
+                <li class="nav-items" tabindex="2">
                     <a href="#about-me">SOBRE MÍ</a>
                 </li>
-                <li class="nav-items">
+                <li class="nav-items" tabindex="3">
                     <a href="#skills">CONOCIMIENTOS</a>
                 </li>
-                <li class="nav-items">
+                <li class="nav-items" tabindex="4">
                     <a href="#projects">PROYECTOS</a>
                 </li>
-                <li class="nav-items">
+                <li class="nav-items" tabindex="5">
                     <a class="contact-style" href="#contact">CONTACTO</a>
                 </li>
             </ul>
         </nav>
-        <!-- Fin menú de navegación-->
+        <!-- Fin menú de navegación -->
     </header>
     <!-- Fin header -->
     <main>
         <!-- About me section -->
         <section class="about-section" id="inicio">
             <div class="about-me-section">
-                <p>¡Hola! Soy</p>
+                <p tabindex="6" aria-label="Hola soy Nancy Rojas, desarrolladora web">¡Hola! Soy</p>
                 <h1>Nancy Rojas</h1>
                 <p>Desarrolladora Web</p>
-                <a href="#projects" class="about-style">LO QUE HAGO</a>
+                <a href="#projects" class="about-style" tabindex="7">LO QUE HAGO</a>
             </div>
             <div class="about-me-photo">
-                <img src="assets/foto-perfil-1.jpeg" alt="">
+                <img src="assets/foto-perfil-1.jpeg" tabindex="8" alt="Foto de perfil convertida en caricatura">
             </div>
         </section>
         <!-- Fin about me section -->
 
-        <!--About me bis-->
+        <!-- About me bis-->
         <section class="about-section-bis"  id="about-me">
             <div class="container-bis">
                 <div class="about-me-photo-bis">
-                    <img src="assets/foto-perfil-2.jpeg" alt="">
+                    <img src="assets/foto-perfil-2.jpeg" tabindex="9" alt="Foto de perfil">
                 </div>
-                <div class="about-me-section-bis">
+                <div class="about-me-section-bis" tabindex="10">
                     <h4>Te cuento un poco sobre mi</h4>
                     <p>Desde mayo a julio de 2022 hice un curso de introducción al desarrollo Frontend. Actualmente me encuentro cursando la carrera de Frontend en Ada ITW de más de 400 horas de desarrollo. Me encanta la formación que me están dando. Trabajamos teoría, código en vivo y ejercitación en grupo. Me encanta el diseño y resolver problemas programando. Me considero una persona responsable, detallista, con espíritu colaborativo, proactiva y comprometida. Me gusta mucho desarrollar en equipo, estar en constante aprendizaje y por sobre todas las cosas tengo muchas ganas de trabajar y progresar.
                     </p>
-                    <a href="https://nancycrojas.github.io/cv/" target="_blank" class="download-style">DESCARGAR CV</a>
+                    <a href="https://nancycrojas.github.io/cv/" target="_blank" class="download-style" tabindex="11">DESCARGAR CV</a>
                 </div>
-                <a class="arrow" href="#inicio">
-                    <i class="fa-solid fa-circle-chevron-up"></i>
-                </a>
             </div>
         </section>
-        <!--Fin about me bis-->
+        <!-- Fin about me bis -->
         
         <!-- Section skills -->
         <section class="skills-section" id="skills">
-            <div class="skills-container">
+            <div class="skills-container" tabindex="12">
                 <h2>Mis conocimientos</h2>
                 <p>Estas son las habilidades que fui desarrollando a lo largo del curso de Ada ITW.</p>
             <div class="skills-list">
                 <div class="skills-items">
-                    <i class="devicon-html5-plain colored skills-icons icons"></i>
+                    <i class="devicon-html5-plain colored skills-icons icons" aria-label="Icono"></i>
                     <p class="skill-name">HTML5</p>
                 </div>
                 <div class="skills-items">
-                    <i class="devicon-css3-plain colored icons"></i>
+                    <i class="devicon-css3-plain colored icons" aria-label="Icono"></i>
                     <p class="skill-name">CSS3</p>
                 </div>
                 <div class="skills-items">
-                     <i class="devicon-sass-original colored icons"></i>
+                     <i class="devicon-sass-original colored icons" aria-label="Icono"></i>
                      <p class="skill-name">SASS</p>
                 </div>
                 <div class="skills-items">
-                    <i class="devicon-javascript-plain colored icons"></i>
+                    <i class="devicon-javascript-plain colored icons" aria-label="Icono"></i>
                     <p class="skill-name">JavaScript</p>
                 </div>
                 <div class="skills-items">
-                    <i class="devicon-react-original colored icons"></i>
+                    <i class="devicon-react-original colored icons" aria-label="Icono"></i>
                     <p class="skill-name">React</p>
                 </div>
                 <div class="skills-items">
-                    <i class="devicon-git-plain colored icons"></i>
+                    <i class="devicon-git-plain colored icons" aria-label="Icono"></i>
                     <p class="skill-name">GIT</p>
                 </div>
             </div>
@@ -164,126 +161,126 @@
         <!-- Quote section -->
         <section class="quote-section">
             <div class="quote-container">
-                <i class="fa-solid fa-quote-right quote-icon"></i>
-                <blockquote class="quote-txt" cite="https://psicologiaymente.com/reflexiones/frases-steve-jobs">
+                <i class="fa-solid fa-quote-right quote-icon" tabindex="13" aria-label="icono de frase"></i>
+                <blockquote class="quote-txt" cite="https://psicologiaymente.com/reflexiones/frases-steve-jobs" tabindex="14">
                     Todo lo que te rodea que llamas vida fue hecho por gente que no era más inteligente que tú, <br> y lo puedes cambiar, puedes influenciar, puedes construir tus propias cosas que otra gente pueda usar.
                 </blockquote>
-                <h3>Steve Jobs</h3>
+                <h3 tabindex="15">Steve Jobs</h3>
             </div>
         </section>
         <!-- Fin quote section -->
 
         <!-- Projects section-->
         <section class="projects-section" id="projects">
-            <div class="projects-container-txt">
+            <div class="projects-container-txt" tabindex="16">
                 <h2>Mis proyectos</h2>
                 <p>En base a los conocimientos obtenidos en Ada ITW y un aprendizaje autodidacta pude realizar diferentes proyectos. Estos son algunos de ellos:</p> 
             <div class="projects-container">
                 <div class="projects-items">
-                    <a href="#" target="_blank">
-                        <img class="img-projects" src="assets/mi-portfolio.png" alt="portada del porfolio">
+                    <a href="#" target="_blank" aria-label="Ir a la portada de proyecto porfolio">
+                        <img class="img-projects" src="assets/mi-portfolio.png" alt="portada proyecto porfolio">
                         <p>Mi portfolio</p>
                     </a>
                 </div>
                 <div class="projects-items">
-                    <a href="https://nancycrojas.github.io/cinemaflex/" target="_blank">
-                        <img class="img-projects" src="assets/cinemaflex.png" alt="portada buscador de peliculas">
+                    <a href="https://nancycrojas.github.io/cinemaflex/" target="_blank" aria-label="Ir a la portada proyecto buscador de peliculas">
+                        <img class="img-projects" src="assets/cinemaflex.png" alt="portada proyecto cinemaflex">
                         <p>Portada Cinemaflex</p>
                     </a>
                 </div>
                 <div class="projects-items">
-                    <a href="#" target="_blank">
-                        <img class="img-projects" src="assets/match-3.png" alt="portada match 3">
+                    <a href="#" target="_blank" aria-label="Ir a la portada proyecto match 3">
+                        <img class="img-projects" src="assets/match-3.png" alt="portada proyecto match 3">
                         <p>Match 3</p>
                     </a>
                 </div>
                 <div class="projects-items">
-                    <a href="#" target="_blank">
-                        <img class="img-projects" src="assets/generador-de-memes.png" alt="portada generador de memes">
+                    <a href="#" target="_blank" aria-label="Ir a la portada proyecto generador de memes">
+                        <img class="img-projects" src="assets/generador-de-memes.png" alt="portada proyecto generador de memes">
                         <p>Generador de memes</p>
                     </a>
                 </div>
                 <div class="projects-items">
-                    <a href="#" target="_blank">
-                        <img class="img-projects" src="assets/controlador.png" alt="portada controlador de gastos">
+                    <a href="#" target="_blank" aria-label="Ir a la portada proyecto controlador de gastos">
+                        <img class="img-projects" src="assets/controlador.png" alt="portada proyecto controlador de gastos">
                         <p>Controlador de gastos</p>
                     </a>
                 </div>
                 <div class="projects-items">
-                    <a href="#" target="_blank">
-                        <img class="img-projects" src="assets/adminitrador-de-reuniones.png" alt="portada administrador de reuniones">
+                    <a href="#" target="_blank" aria-label="Ir a la portada proyecto administrador de reuniones">
+                        <img class="img-projects" src="assets/adminitrador-de-reuniones.png" alt="portada proyecto administrador de reuniones">
                         <p>Administador de reuniones</p>
                     </a>
                 </div>
                 <div class="projects-items">
-                    <a href="#" target="_blank">
-                        <img class="img-projects" src="assets/todo-app.png" alt="portada todo app">
+                    <a href="#" target="_blank" aria-label="Ir a la portada proyecto todo app">
+                        <img class="img-projects" src="assets/todo-app.png" alt="portada proyecto todo app">
                         <p>Todo APP</p>
                     </a>
                 </div>
             </div>
             </div>
         </section>
-        <!-- Fin projects section-->
+        <!-- Fin projects section -->
 
-        <!-- Contact section-->
+        <!-- Contact section -->
         <section class="contact-section" id="contact">
-            <div class="contact-container">
-                <div class="contact-me-container">
+            <div class="contact-container"  tabindex="17">
+                <div class="contact-me-container" tabindex="18">
                     <h3>Contactame</h3>
                     <p>Si queres conocerme más, podes ingresar a mis redes sociales. Mi bandeja de entrada siempre está disponible.
                         Podes dejarme tu consulta, oferta, feedback o simplemente un saludo. A la brevedad te responderé :)</p>
-                    <ul class="nav-contact">  
+                    <ul class="nav-contact" tabindex="19">  
                         <li class="nav-contact-items">
                             <a href="https://github.com/nancycrojas" target="_blank" class="nav-contact-items-colored">
-                                <i class="fa-brands fa-github-alt"></i>nancycrojas
+                                <i class="fa-brands fa-github-alt" aria-label="mi github es"></i>nancycrojas
                             </a>
                         </li>
                         <li class="nav-contact-items">
                             <a href="https://www.linkedin.com/in/nancy-clarisa-rojas/" target="_blank" class="nav-contact-items-colored">
-                                <i class="fa-brands fa-linkedin-in"></i>Nancy Clarisa Rojas
+                                <i class="fa-brands fa-linkedin-in" aria-label="mi LinkedIn es"></i>Nancy Clarisa Rojas
                             </a>
                         </li>
                         <li class="nav-contact-items">
                             <a href="mailto:nanclarisaok@gmail.com" target="_blank" class="nav-contact-items-colored">
-                                <i class="fa-solid fa-envelope"></i>nanclarisaok@gmail.com
+                                <i class="fa-solid fa-envelope" aria-label="mi mail es"></i>nanclarisaok@gmail.com
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="form-container">
+                <div class="form-container" tabindex="20">
                     <h3>Escribime</h3>
                     <form action="">
                         <div class="name-form">
                             <div class="fname-form">
                                 <label for="fname" class="fname">Nombre *</label>
-                                <input type="text" name="fname" id="fname" placeholder="p. ej.: Ada" required>
+                                <input type="text" name="fname" id="fname" placeholder="p. ej.: Ada" aria-label="escribí tu nombre aquí" required>
                             </div>
                             <div class="lname-form">
                                 <label for="lname" class="lname">Apellido *</label>
-                                <input type="text" name="lname" id="lname" placeholder="p. ej.: Lovelace" required>
+                                <input type="text" name="lname" id="lname" placeholder="p. ej.: Lovelace" aria-label="escribí tu apellido aquí"required>
                             </div>
                         </div>
                         <div class="email-form">
                             <label for="email" class="email">Email *</label>
-                            <input type="email" name="email" id="email" placeholder="p. ej.: ada.lovelace@gmail.com" required>
+                            <input type="email" name="email" id="email" placeholder="p. ej.: ada.lovelace@gmail.com" aria-label="escribí tu mail aquí" required>
                         </div>
                         <div class="message-form">
                             <label for="message" class="message">Mensaje *</label>
-                            <textarea name="message" id="message" placeholder="Escriba un mensaje aquí" cols="70" rows="7" required></textarea>
+                            <textarea name="message" id="message" placeholder="Escriba un mensaje aquí" cols="70" rows="7" aria-label="escribí tu mensaje aquí" required></textarea>
                         </div>
                         <button type="submit" class="send">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
-        <!-- Fin contact section-->
+        <!-- Fin contact section -->
     </main>
     <!-- Footer-->
     <footer>
         <!--  Menú de navegación footer -->
         <nav class="footer-nav">
-            <ul class="nav-list-footer">
+            <ul class="nav-list-footer" tabindex="21">
                 <li><a href="#inicio">INICIO</a></li>
                 <li><a href="#skills">CONOCIMIENTOS</a></li>
                 <li><a href="#projects">PROYECTOS</a></li>
@@ -291,27 +288,31 @@
             </ul>
         </nav>    
         <nav class="footer-nav">    
-            <ul class="nav-networks">
+            <ul class="nav-networks" tabindex="22">
                 <li>
-                    <a href="https://github.com/nancycrojas" target="_blank">
+                    <a href="https://github.com/nancycrojas" target="_blank" aria-label="Ir a github.com">
                         <i class="fa-brands fa-github-alt net-icons"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/nancy-clarisa-rojas/" target="_blank">
+                    <a href="https://www.linkedin.com/in/nancy-clarisa-rojas/" target="_blank" aria-label="Ir a LinkedIn">
                         <i class="fa-brands fa-linkedin-in net-icons"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:nanclarisaok@gmail.com" target="_blank">
+                    <a href="mailto:nanclarisaok@gmail.com" target="_blank" aria-label="Ir a la casilla de mail">
                         <i class="fa-solid fa-envelope net-icons"></i>
                     </a>
                 </li>
             </ul>
         </nav>
-        <!-- Fin menú de navegación footer-->
-        <p>Hecho con ❤️ por Nancy Rojas</p>
+        <!-- Fin menú de navegación footer -->
+        <p tabindex="23">Hecho con ❤️ por Nancy Rojas</p>
+        <a class="arrow" href="#inicio">
+            <i class="fa-solid fa-circle-chevron-up" tabindex="24" aria-label="Flecha para ir arriba"></i>
+        </a>
     </footer>
     <!-- Fin footer-->
 </body>
 </html>  
+

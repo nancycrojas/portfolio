@@ -120,10 +120,8 @@ h1 {
 .container-bis {
     display: flex;
     justify-content: space-evenly; 
-
     min-height: 100vh;
     align-items: center;
-
 }
 
 .about-me-photo-bis { 
@@ -144,7 +142,6 @@ h1 {
     justify-content: center;
     align-items: center;
     max-width: 60%;
-
     padding-top: 50px;
 }
 
