@@ -21,6 +21,7 @@ header {
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
 }
 .header-nav .nav-list {
     display: flex;
@@ -176,6 +177,21 @@ h2 {
 .skills-items .icons {
    font-size: 100px;
 }
+
+.icons:hover {
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+}
+
+.skills-items .icons-github {
+    color: #F7F7F7;
+ }
+
+.skills-items .icons-chakra {
+    color: cyan;
+ }
+
 .skills-items .skill-name {
     margin-top: 15px;
     font-size: 20px;
@@ -252,6 +268,12 @@ h2 {
     border-radius: 5px;
     object-fit: cover;
     margin-top: 15px;
+}
+
+.projects-items .img-projects:hover {
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
 }
 /* Contact section */
 .contact-section {
